@@ -46,6 +46,23 @@
 					</archive>
 				</configuration>
 			</plugin>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<!--
+					<locales>en,es</locales>
+					-->
+					<locales>en</locales>
+				</configuration>
+			</plugin>
 		</plugins>
+		<!--
+		<distributionManagement>
+			<site>
+				<id>website</id>
+				<url>scp://webhost.company.com/www/website</url>
+			</site>
+		</distributionManagement>
+		-->
 	</build>
 </project>
