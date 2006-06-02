@@ -20,30 +20,39 @@
  *
  * Initial developer(s): Pablo Alcaraz.
  * Contributor(s): 
+ *
  */
-package ar.com.pabloa.jmimetypelib;
+package ar.com.pabloa.jmimetypelib.testers;
 
 import java.io.File;
 
-import ar.com.pabloa.jmimetypelib.testers.GlobTester;
-import ar.com.pabloa.jmimetypelib.testers.MagicTester;
+import ar.com.pabloa.jmimetypelib.exceptions.ElementCreationException;
 
 /**
  * @author pabloa
- * 
+ *
  */
-public class JMimetypeLib {
-	private GlobTester globTester;
-	private MagicTester magicTester;
+public class MagicElement {
 
-	public JMimetypeLib() {
-		globTester = new GlobTester();
-		magicTester = new MagicTester();
+	private boolean discard;
+
+
+	public MagicElement(String magicline) throws ElementCreationException {
+		// TODO Auto-generated constructor stub
 	}
-	
-	public String getMimeType( File file) {
-		String mimeType = globTester.test( file);
-		return mimeType;
+
+	public boolean test(File file, boolean b) {
+		// TODO Auto-generated method stub
+		return false;
 	}
-	
+
+	public String getMimetype() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public boolean isDiscard() {
+		return discard;
+	}
+
 }
